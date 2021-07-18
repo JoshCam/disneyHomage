@@ -1,0 +1,288 @@
+.col-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features {
+  color: white;
+  background-color: #041536;
+  .banner-container {
+    overflow: hidden;
+    .star-banner {
+      width: 175%;
+    }
+  }
+  .feature-card {
+    width: 92%;
+    margin: 10px auto;
+    .feature-card-image {
+      width: 100%;
+      display: flex;
+    }
+    .feature-text {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      background-color: #092c66;
+      padding: 20px;
+      h2 {
+        margin: 5px;
+        font-weight: 350;
+      }
+      p {
+        margin: 5px;
+        font-weight: 300;
+      }
+      .disney-plus {
+        font-weight: 600;
+      }
+    }
+  }
+  .brand-container {
+    margin: 10px;
+    width: 95%;
+    .brand-banner {
+      width: 100%;
+    }
+  }
+  .subscribe-btn {
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: inline-block;
+    cursor: pointer;
+    color: #000000;
+    // font-weight: 600;
+    font-size: 16px;
+    padding: 15px 60px;
+    text-decoration: none;
+    margin: 25px;
+  }
+  .subscribe-btn:hover {
+    background-color: #f6f6f6;
+  }
+  .subscribe-btn:active {
+    position: relative;
+    top: 1px;
+  }
+  .terms-conditions {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 25px;
+    font-weight: 350;
+  }
+}
+
+.shop {
+  background-color: #f1f2f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+    font-weight: 350;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .shop-card {
+    width: 92%;
+    margin: 10px;
+    .shop-image {
+      width: 100%;
+      display: flex;
+    }
+    .shop-text {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      h2 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      p {
+        margin: 5px;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.shows {
+  background-color: #f1f2f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h2 {
+    text-align: center;
+    font-weight: 350;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .show-card {
+    width: 92%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .show-image {
+      width: 100%;
+      display: flex;
+    }
+    .text-image-container {
+      width: 100%;
+      margin-top: 5px;
+      .text-image {
+        width: 60%;
+        margin-top: 10px;
+      }
+    }
+    .shows-text {
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      align-items: center;
+      span {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 35px;
+      }
+      p {
+        margin: 5px;
+        font-size: 16px;
+        font-weight: 350;
+      }
+    }
+  }
+}
+
+.movies {
+  background-color: #f1f2f3;
+  h2 {
+    text-align: center;
+    font-weight: 350;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .scrollable {
+    overflow: scroll;
+    .scroll-container {
+      display: flex;
+      .thumbnail {
+        display: inline-block;
+        .thumbnail-img-container {
+          margin: 10px;
+          border-radius: 3px;
+          .thumbnail-image {
+            width: 40vw;
+            border-radius: 3px;
+          }
+        }
+        div h3 {
+          margin-left: 10px;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.parks {
+  background-color: #f1f2f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+    font-weight: 350;
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+  }
+  .park-card {
+    width: 92%;
+    margin: 10px;
+    .park-image {
+      width: 100%;
+      display: flex;
+    }
+    .park-text {
+      font-size: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: white;
+      h2 {
+        margin: 5px;
+        text-align: left;
+        font-size: 18px;
+      }
+      p {
+        margin: 5px;
+        font-weight: 300;
+      }
+      .parks-link {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.socials {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  p {
+    display: inline-block;
+    font-size: 18px;
+    margin: 7px;
+  }
+  img {
+    margin: 7px;
+  }
+}
+
+.footer-logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 10px 0;
+  .footer-logo {
+    width: 20%;
+    height: 100%;
+  }
+}
+
+.footer-links {
+  font-size: 12px;
+  font-weight: 300;
+  ul {
+    margin-bottom: 30px;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 0 8px 8px 4px;
+      line-height: 14.4px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}

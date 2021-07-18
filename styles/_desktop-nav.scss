@@ -1,0 +1,69 @@
+.disney-header-logo {
+  vertical-align: middle;
+  height: 40px;
+  width: auto;
+}
+
+.disney-header-logo-mob {
+  display: none;
+}
+
+nav {
+  height: 60px;
+  font-size: 14px;
+  background: none;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  ul {
+    // First nav bar
+    position: relative;
+    list-style: none;
+    a {
+      // Link in header menu
+      text-decoration: none;
+      line-height: 60px;
+      font-weight: 550;
+      padding: 5px 16px 0 16px;
+      display: block;
+      color: $header-text-color;
+      img {
+        margin-bottom: 5px;
+      }
+    }
+    li {
+      // List items in header menu
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      &:hover > ul {
+        // Reveals second ul
+        display: inherit;
+      }
+      ul {
+        //   Hover Menu
+        background-color: $menu-bg-color;
+        position: absolute;
+        top: 60px;
+        list-style: none;
+        display: none;
+        li {
+          // Hover menu items
+          display: block;
+          a {
+            // Hover Menu links
+            line-height: 30px;
+            width: max-content;
+            color: $dropdown-text-color;
+            font-weight: 500;
+            font-size: 14px;
+            margin: 8px;
+            text-transform: none;
+            &:hover {
+              color: $hover-text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

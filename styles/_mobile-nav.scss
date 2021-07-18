@@ -1,0 +1,136 @@
+#menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 16px;
+  height: 2px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-6px);
+}
+/* ANIMATION */
+#menu-btn.open .menu-btn__burger {
+  transform: rotate(-45deg);
+}
+#menu-btn.open .menu-btn__burger::before {
+  transform: rotate(90deg);
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  height: px;
+  #menu-btn {
+    margin-right: auto;
+  }
+  .disney-header-logo-div {
+    width: 65%;
+  }
+}
+
+.disney-header-logo-mob {
+  height: 34px;
+  width: 84px;
+  margin: 18px 18px 0 18px;
+}
+
+// Mobile Navigation
+nav {
+  height: 63px;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  ul {
+    //   Fist list (Main Menu)
+    display: none;
+    li {
+      // Main menu items
+      padding: 10px;
+      a {
+        margin: 0;
+        img {
+          display: inline;
+        }
+      }
+      ul {
+        display: none;
+        li {
+          a {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+#nav.open {
+  position: relative;
+  display: block;
+  ul {
+    //   Fist list (Main Menu)
+    display: inherit;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: white;
+    list-style-type: none;
+    li {
+      // Main menu items
+      width: 100%;
+      font-weight: 540;
+      padding: 20px;
+      border-bottom: 1px solid rgb(190, 190, 190);
+      &:nth-child(1) {
+        display: none;
+      }
+      &:last-child {
+        border: none;
+      }
+      &:focus-within ul {
+        // sub menu
+        display: block;
+        background-color: #f5f5f5;
+        border-top: none;
+        li {
+          padding: 15px;
+          a {
+            font-weight: 350;
+            font-size: 12px;
+            color: rgb(37, 37, 37);
+          }
+        }
+      }
+      a {
+        // main menu links
+        text-decoration: none;
+        color: black;
+      }
+      ul {
+        // submenu without focus-within
+        display: none;
+        border: none;
+      }
+    }
+  }
+}
